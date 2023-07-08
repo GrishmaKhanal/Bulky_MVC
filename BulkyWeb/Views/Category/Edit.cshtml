@@ -1,6 +1,7 @@
 ﻿@model Category
 
 <form method="post">
+    <input asp-for="Id" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary ">Edit Category</h2>
@@ -22,10 +23,10 @@
         @* Style of Create and Back button *@
         <div class="row">
             <div class="col-6">
-                <button type="submit" class="btn btn-primary form-control">Save Changes</button>
+                <button type="submit" class="btn btn-primary form-control"><i class="bi bi-file-earmark-check"></i> Save Changes</button>
             </div>
             <div class="col-6">
-                <a asp-controller="Category" asp-action="Index" class="btn btn-secondary form-control">Back</a>
+                <a asp-controller="Category" asp-action="Index" class="btn btn-secondary form-control"><i class="bi bi-caret-left"></i> Back</a>
             </div>
         </div>
     </div>
