@@ -20,6 +20,11 @@ html {
 body {
   margin-bottom: 60px;
 }
-.removeOutline {
+.removeOutline:focus {
     outline: none;
+    border: 0;
+}
+.btn:focus {
+    outline: none;
+    border: 0;
 }
